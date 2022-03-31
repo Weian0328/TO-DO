@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="app.js" type="module" defer></script>
+    <style>
+      ul {
+        list-style: circle;
+      }
+      span {
+        display: inline-block;
+        padding: 3px;
+        background-color: #ccc;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form">
+      Email:<input type="email" id="email" /> <br />
+      nickname:<input type="nickname" id="nickname" /> <br />
+      password:<input type="password" id="password" /> <br />
+      <input type="submit" value="註冊" />
+    </form>
+    <hr />
+
+    <form id="login_form">
+      Email:<input type="email" id="login_email" /> <br />
+      password:<input type="password" id="login_password" /> <br />
+      <input type="submit" value="登入" />
+    </form>
+    <hr />
+
+    <form id="checkForm">
+      <button id="checkbtn">檢查登入</button>
+      <span id="result"></span>
+    </form>
+    <hr />
+
+    <form id="logoutForm">
+      <button id="logoutbtn">登出</button>
+      <span id="result"></span>
+    </form>
+    <hr />
+
+    <form id="todoForm">
+      <input type="text" id="todo" />
+      <button id="textbutton">新增</button>
+      <ul id="todos"></ul>
+    </form>
+  </body>
+</html>
